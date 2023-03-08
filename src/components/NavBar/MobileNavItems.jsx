@@ -26,13 +26,13 @@ export default function (props) {
 				<SmallButton
 					id="newSYBtn"
 					onClick={props.newSYOnClick}
-					bgColor="bg-green-600"
+					bgColor="bg-green-600 hover:bg-green-800"
 					iconLabel={<BsPlusLg />}
 				/>
 				<SmallButton
 					id="deleteSYBtn"
 					onClick={props.deleteSYOnClick}
-					bgColor="bg-red-600"
+					bgColor="bg-red-600 hover:bg-red-800"
 					iconLabel={<BsTrashFill />}
 				/>
 			</li>

@@ -14,13 +14,13 @@ export default function (props) {
 			<div className="mt-8 mb-5 flex items-center justify-center gap-10 text-xl">
 				<ModalBtn
 					id="cancelBtn"
-					bgColor="bg-red-600"
+					bgColor="bg-red-600 hover:bg-red-800"
 					btnLabel="Cancel"
 					onClick={props.cancelBtnOnClick}
 				/>
 				<ModalBtn
 					id="deleteBtn"
-					bgColor="bg-red-700"
+					bgColor="bg-red-700 hover:bg-red-900"
 					btnLabel="Delete"
 					onClick={props.deleteBtnOnClick}
 				/>
