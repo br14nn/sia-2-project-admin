@@ -7,7 +7,11 @@ export default function (props) {
 			id="modalBg"
 			onClick={props.onClickModalBg}
 		>
-			<Modal />
+			<Modal
+				name={props.name}
+				onClickDeleteProfile={props.onClickDeleteProfile}
+				onClickUpdateProfile={props.onClickUpdateProfile}
+			/>
 		</div>
 	);
 }

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import EditProfileModal from "../EditProfileModal/EditProfileModal";
+import EditProfileModal from "../StudentEditProfileModal/EditProfileModal";
 import HeaderStyle1 from "../Headers/HeaderStyle1";
 import FilterByGradeLevel from "./FilterByGradeLevel";
 import FilterBySection from "./FilterBySection";
@@ -38,7 +38,12 @@ export default function () {
 					<StudentsTable onClickEditProfile={handleClick} />
 				</section>
 				{showEditProfileModal && (
-					<EditProfileModal onClickModalBg={handleClick} content={testContent} />
+					<EditProfileModal
+						onClickModalBg={handleClick}
+						name=""
+						onClickDeleteProfile=""
+						onClickUpdateProfile=""
+					/>
 				)}
 			</section>
 		</div>

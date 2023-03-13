@@ -1,4 +1,4 @@
-import StudentTR from "./StudentTR";
+import TeacherTableTR from "./TeacherTableTR";
 
 export default function (props) {
 	return (
@@ -6,19 +6,15 @@ export default function (props) {
 			<thead className="bg-theme-blue text-lg tracking-widest text-white tablet:text-xl desktop:text-2xl">
 				<tr>
 					<th className="w-30% rounded-tl-lg">NAME</th>
-					<th className="w-10%">LEVEL</th>
-					<th className="w-20%">SECTION</th>
-					<th className="w-20%">STATUS</th>
+					<th className="w-50%">ADVISORY</th>
 					<th className="w-20% rounded-tr-lg">ACTION</th>
 				</tr>
 			</thead>
 			<tbody className="bg-white text-center text-lg font-bold tablet:text-xl desktop:text-2xl">
-				<StudentTR
-					name="qwerty"
-					level="4"
-					section="Maligaya"
-					status="Enrolled"
-					id="1"
+				<TeacherTableTR
+					teacherName="qwerty, ytrewq"
+					teacherAdvisory="Grade 6: Rizal"
+					id="T001"
 					onClickEditProfile={props.onClickEditProfile}
 				/>
 			</tbody>
