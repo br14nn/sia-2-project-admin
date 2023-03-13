@@ -28,7 +28,7 @@ export default function () {
 						id="contentInput"
 					></textarea>
 				</div>
-				<button className="ml-auto mr-5 w-fit rounded-lg bg-green-600 px-5 text-xl font-bold text-white">
+				<button className="ml-auto mr-5 w-fit rounded-lg bg-green-600 px-5 text-xl font-bold text-white hover:bg-green-800">
 					UPLOAD
 				</button>
 				<AnnouncementDivHeader title="ANNOUNCEMENTS" />
