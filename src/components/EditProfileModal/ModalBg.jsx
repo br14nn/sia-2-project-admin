@@ -1,13 +1,13 @@
+import Modal from "./Modal";
+
 export default function (props) {
 	return (
 		<div
-			className="fixed inset-0 flex h-screen w-screen items-center justify-center bg-black/50"
+			className="fixed inset-0 flex h-screen w-screen items-center justify-center overflow-x-auto bg-black/50 px-16 py-10 tablet:px-36 desktop:px-56"
 			id="modalBg"
 			onClick={props.onClickModalBg}
 		>
-			<div className="h-56 w-56 rounded-lg bg-white" id="modal">
-				{props.content}
-			</div>
+			<Modal />
 		</div>
 	);
 }
